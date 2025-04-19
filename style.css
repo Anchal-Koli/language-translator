@@ -1,0 +1,111 @@
+/* style.css */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f71a94, #efef84);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  textarea::placeholder {
+    color: #302ddc; /* or any color you like */
+    opacity: 1;  /* Make sure it's fully visible */
+    font-style: italic; /* Optional, just for a nice touch */
+    font-weight: bold;
+  }
+  
+  .container {
+    background: rgb(238, 240, 140);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    margin-bottom: 20px;
+    color: #4b0082;
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #369fba;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #0b0b0b;
+    resize: none;
+    margin-bottom: 20px;
+    background-color: #bfb8cc;
+  }
+  
+  .flex-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  select {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    background-color: #ae8888;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background: #4b0082;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background: #5c1aa8;
+  }
+  
+  .copy-btn {
+    background: #008080;
+  }
+  
+  .copy-btn:hover {
+    background: #00a5a5;
+  }
+  
+  #outputText {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    min-height: 60px;
+    color: #333;
+    font-size: 16px;
+  }
+  
